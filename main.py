@@ -13,7 +13,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 def main() -> None:
     # 1. AQUÍ ES DONDE LEE LA VARIABLE DE ENTORNO
     # Railway pondrá tu token secreto en esta variable "TELEGRAM_TOKEN"
-    TOKEN = os.environ.get("8265573081:AAHn0BwYczCdNuO5tp4tM6z0YsXeciOiz6k")
+    TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
     if not TOKEN:
         print("Error: No se encontró la variable de entorno TELEGRAM_TOKEN")
